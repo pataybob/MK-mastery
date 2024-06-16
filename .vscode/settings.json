@@ -2,5 +2,13 @@
     "liveSassCompile.settings.autoprefix": [
 
     ],
-    "liveSassCompile.settings.forceBaseDirectory": "css"
-}
+
+"liveSassCompile.settings.formats": [
+    {
+     "format": "expanded",
+     "extensionName": ".css",
+     "savePath": "/src/css"
+    }
+   ],
+   "liveSassCompile.settings.forceBaseDirectory": "css",
+   "liveServer.settings.port": 5501}

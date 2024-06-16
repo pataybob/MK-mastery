@@ -1,0 +1,30 @@
+.wrapper{
+    .container{
+        max-width: 1400px;
+        margin: 0 auto;
+        .header{
+            margin: 35px 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            .header__nav{
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 50px;
+                    li{
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+                }
+            }
+            .socials{
+                a{
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
