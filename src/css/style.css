@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .wrapper .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -60,11 +61,16 @@
   border-radius: 16px;
 }
 .wrapper .container .hero .slider {
-  max-width: 35%;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 30px;
+  transition: transform 5s ease-in-out;
+}
+.wrapper .container .hero .slider .photo .slider__item {
+  transition: transform 0.5s ease-in-out;
+}
+.wrapper .container .hero .slider .photo .slider__item img {
   transition: transform 0.5s ease-in-out;
 }
 .wrapper .container .hero .slider .buttons {
@@ -139,6 +145,432 @@
   display: block;
   background-color: #fff;
   transform: rotate(90deg);
+}
+.wrapper .container .popular h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.wrapper .container .popular .grid__container {
+  margin: 50px 0;
+  display: grid;
+  max-height: 500px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 0.5fr;
+  grid-column-gap: 25px;
+  grid-row-gap: 30px;
+}
+.wrapper .container .popular .grid__container .portmone {
+  width: 600px;
+  height: 240px;
+  background-color: #000;
+  border-radius: 22px;
+  grid-area: 1/1/2/3;
+  background: url(../images/icons/portmone.png);
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: all 0.5s ease;
+}
+.wrapper .container .popular .grid__container .portmone::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../images/icons/portmone.png) no-repeat center center;
+  background-size: cover;
+  filter: blur(2px);
+  z-index: 1;
+}
+.wrapper .container .popular .grid__container .portmone:hover::before {
+  filter: blur(0);
+}
+.wrapper .container .popular .grid__container .portmone:hover .content {
+  backdrop-filter: blur(0);
+  transform: scale(1.1);
+  font-weight: 700;
+}
+.wrapper .container .popular .grid__container .portmone .content {
+  display: flex;
+  margin-top: 75px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  color: white;
+  backdrop-filter: blur(2px);
+  transition: all 0.5s ease;
+  gap: 5px;
+}
+.wrapper .container .popular .grid__container .portmone .content h1, .wrapper .container .popular .grid__container .portmone .content p {
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+}
+.wrapper .container .popular .grid__container .womens__bag {
+  width: 290px;
+  height: 240px;
+  background-color: #000;
+  border-radius: 22px;
+  grid-area: 2/1/2/2;
+  position: relative;
+  bottom: 90px;
+  background: url(../images/icons/womens.png);
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: all 0.5s ease;
+}
+.wrapper .container .popular .grid__container .womens__bag::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../images/icons/womens.png) no-repeat center center;
+  background-size: cover;
+  filter: blur(2px);
+  z-index: 1;
+}
+.wrapper .container .popular .grid__container .womens__bag:hover::before {
+  filter: blur(0);
+}
+.wrapper .container .popular .grid__container .womens__bag:hover .content {
+  backdrop-filter: blur(0);
+  transform: scale(1.1);
+  font-weight: 700;
+}
+.wrapper .container .popular .grid__container .womens__bag .content {
+  display: flex;
+  margin-top: 85px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  color: white;
+  backdrop-filter: blur(2px);
+  transition: all 0.5s ease;
+  gap: 5px;
+}
+.wrapper .container .popular .grid__container .womens__bag .content h1, .wrapper .container .popular .grid__container .womens__bag .content p {
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+}
+.wrapper .container .popular .grid__container .man__bag {
+  width: 290px;
+  height: 240px;
+  background-color: #000;
+  border-radius: 22px;
+  grid-area: 2/2/2/3;
+  position: relative;
+  bottom: 90px;
+  background: url(../images/icons/mans.png);
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: all 0.5s ease;
+}
+.wrapper .container .popular .grid__container .man__bag::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../images/icons/mans.png) no-repeat center center;
+  background-size: cover;
+  filter: blur(2px);
+  z-index: 1;
+}
+.wrapper .container .popular .grid__container .man__bag:hover::before {
+  filter: blur(0);
+}
+.wrapper .container .popular .grid__container .man__bag:hover .content {
+  backdrop-filter: blur(0);
+  transform: scale(1.1);
+  font-weight: 700;
+}
+.wrapper .container .popular .grid__container .man__bag .content {
+  display: flex;
+  margin-top: 85px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  color: white;
+  backdrop-filter: blur(2px);
+  transition: all 0.5s ease;
+  gap: 5px;
+}
+.wrapper .container .popular .grid__container .man__bag .content h1, .wrapper .container .popular .grid__container .man__bag .content p {
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+}
+.wrapper .container .popular .grid__container .accesory {
+  width: 290px;
+  height: 500px;
+  background-color: #000;
+  border-radius: 22px;
+  grid-area: 1/3/3/4;
+  background: url(../images/icons/accesory.png);
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: all 0.5s ease;
+}
+.wrapper .container .popular .grid__container .accesory::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../images/icons/accesory.png) no-repeat center center;
+  background-size: cover;
+  filter: blur(2px);
+  z-index: 1;
+}
+.wrapper .container .popular .grid__container .accesory:hover::before {
+  filter: blur(0);
+}
+.wrapper .container .popular .grid__container .accesory:hover .content {
+  backdrop-filter: blur(0);
+  transform: scale(1.1);
+  font-weight: 700;
+}
+.wrapper .container .popular .grid__container .accesory .content {
+  display: flex;
+  margin-top: 220px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  color: white;
+  backdrop-filter: blur(2px);
+  transition: all 0.5s ease;
+  gap: 5px;
+}
+.wrapper .container .popular .grid__container .accesory .content h1, .wrapper .container .popular .grid__container .accesory .content p {
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+}
+.wrapper .container .popular .grid__container .wallets {
+  width: 430px;
+  height: 320px;
+  background-color: #000;
+  border-radius: 22px;
+  grid-area: 1/4/2/5;
+  background: url(../images/icons/wallets.png);
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: all 0.5s ease;
+}
+.wrapper .container .popular .grid__container .wallets::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../images/icons/wallets.png) no-repeat center center;
+  background-size: cover;
+  filter: blur(2px);
+  z-index: 1;
+}
+.wrapper .container .popular .grid__container .wallets:hover::before {
+  filter: blur(0);
+}
+.wrapper .container .popular .grid__container .wallets:hover .content {
+  backdrop-filter: blur(0);
+  transform: scale(1.1);
+  font-weight: 700;
+}
+.wrapper .container .popular .grid__container .wallets .content {
+  display: flex;
+  margin-top: 135px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  color: white;
+  backdrop-filter: blur(2px);
+  transition: all 0.5s ease;
+  gap: 5px;
+}
+.wrapper .container .popular .grid__container .wallets .content h1, .wrapper .container .popular .grid__container .wallets .content p {
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+}
+.wrapper .container .popular .grid__container .belts {
+  width: 430px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: all 0.5s ease;
+}
+.wrapper .container .popular .grid__container .belts::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../images/icons/belts.png) no-repeat center center;
+  background-size: cover;
+  filter: blur(2px);
+  z-index: 1;
+}
+.wrapper .container .popular .grid__container .belts:hover::before {
+  filter: blur(0);
+}
+.wrapper .container .popular .grid__container .belts:hover .content {
+  backdrop-filter: blur(0);
+  transform: scale(1.1);
+  font-weight: 700;
+}
+.wrapper .container .popular .grid__container .belts .content {
+  display: flex;
+  margin-top: 35px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  color: white;
+  backdrop-filter: blur(2px);
+  transition: all 0.5s ease;
+  gap: 5px;
+}
+.wrapper .container .popular .grid__container .belts .content h1, .wrapper .container .popular .grid__container .belts .content p {
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+}
+
+.slider-container {
+  position: relative;
+  max-width: 35%;
+  margin: auto;
+}
+
+.slider {
+  overflow: hidden; /* Скрываем содержимое, выходящее за пределы слайдера */
+}
+
+.photo {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider__item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.buttons {
+  position: absolute;
+  top: 50%;
+  right: -50px; /* Сдвиг вправо за пределы слайдера */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transform: translateY(-50%);
+  pointer-events: none; /* Чтобы кнопки были кликабельны, несмотря на выход за пределы контейнера */
+}
+
+.slider__button {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5); /* Прозрачный фон для лучшей видимости */
+  border-radius: 50%;
+  padding: 10px;
+  pointer-events: all; /* Чтобы кнопки были кликабельны */
+  z-index: 1; /* Отображаем кнопки поверх содержимого слайдера */
+}
+
+.answers {
+  margin: 100px 0;
+}
+.answers h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.answers .accordion {
+  max-width: 980px;
+  margin: 30px 0;
+}
+.answers .accordion .accordion-item {
+  border-bottom: 3px solid #777777;
+  overflow: hidden; /* Добавляем overflow для анимации высоты */
+  transition: border-color 0.3s ease;
+}
+.answers .accordion .accordion-item:last-child {
+  border-bottom: none;
+}
+.answers .accordion .accordion-item .accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.answers .accordion .accordion-item .accordion-header.active {
+  background: #d4d4d4;
+  transition: all 0.3s ease-in-out;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.answers .accordion .accordion-item .accordion-header.active::before {
+  transform: scaleX(1);
+}
+.answers .accordion .accordion-item .accordion-title {
+  font-size: 26px;
+  font-weight: 500;
+  color: #000000;
+}
+.answers .accordion .accordion-item .accordion-icon {
+  font-size: 28px;
+  transition: transform 0.5s ease;
+}
+.answers .accordion .accordion-item .accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out, opacity 0.3s ease-out;
+  opacity: 0;
+}
+.answers .accordion .accordion-item .accordion-content.active {
+  max-height: 500px;
+  transition: max-height 0.3s ease-in, padding 0.3s ease-in, opacity 0.3s ease-in;
+  opacity: 1;
+  margin: 20px;
+}
+.answers .accordion .accordion-item .accordion-content.active p {
+  color: #777777;
+}
+.answers .accordion .accordion-item .accordion-content p {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
 }
 
 @font-face {
