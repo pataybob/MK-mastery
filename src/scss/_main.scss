@@ -27,18 +27,18 @@
                         list-style: disc;
                     }
                 }
-                .btn{
-                    padding: 15px;
-                    background: #1c1c1c;
-                    max-width: 200px;
-                    text-align: center;
-                    color: #fff;
-                    border-radius: 3px;
-                    transition: 0.6s ease;
-                    &:hover{
-                        background: #000;
+                    a{
+                        padding: 15px;
+                        background: #1c1c1c;
+                        max-width: 200px;
+                        text-align: center;
+                        color: #fff;
+                        border-radius: 3px;
+                        transition: 0.6s ease;
+                        &:hover{
+                            background: #000;
+                        }
                     }
-                }
             }
             .slider{
 

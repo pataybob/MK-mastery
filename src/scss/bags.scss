@@ -10,59 +10,29 @@
 
                     .first__stroke, .second__stroke, .third__stroke {
                         display: flex;
-                        gap: 60px;
-                        .mans-bags{
+                        justify-content: space-between;
+
+                        .bags {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
                             cursor: pointer;
-                            border-radius: 11px;
-                            width: 430px;
-                            height: 300px;
-                            background: url(../images/icons/doroj.png) center;
-                            background-size: cover;
 
                             .text {
                                 display: flex;
                                 flex-direction: column;
-                                align-items: center;
-                                margin-top: 25%;
                                 gap: 10px;
 
                                 h1 {
-                                    font-size: 32px;
-                                    font-weight: 700;
-                                    color: #fff;
+                                    font-size: 20px;
+                                    font-weight: 500;
+                                    color: #212121;
                                 }
 
                                 p {
                                     font-size: 18px;
                                     font-weight: 300;
-                                    color: #fff;
-                                }
-                            }
-                        }
-                        .mans {
-                            cursor: pointer;
-                            border-radius: 11px;
-                            width: 430px;
-                            height: 300px;
-                            background: #1c1c1c;
-
-                            .text {
-                                display: flex;
-                                flex-direction: column;
-                                align-items: center;
-                                margin-top: 25%;
-                                gap: 10px;
-
-                                h1 {
-                                    font-size: 32px;
-                                    font-weight: 700;
-                                    color: #fff;
-                                }
-
-                                p {
-                                    font-size: 18px;
-                                    font-weight: 300;
-                                    color: #fff;
+                                    color: #212121;
                                 }
                             }
                         }

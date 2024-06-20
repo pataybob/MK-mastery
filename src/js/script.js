@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
       popup.classList.remove('visible');
       setTimeout(() => {
           popupDetails.innerHTML = '';
-      }, 500); // Duration of the transition
+      }, 500);
   });
 
   window.addEventListener('click', function(event) {
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
           popup.classList.remove('visible');
           setTimeout(() => {
               popupDetails.innerHTML = '';
-          }, 500); // Duration of the transition
+          }, 500);
       }
   });
 });
