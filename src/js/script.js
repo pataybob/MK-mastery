@@ -50,3 +50,39 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+document.addEventListener('DOMContentLoaded', function() {
+  const products = document.querySelectorAll('.product');
+  const popup = document.getElementById('popup');
+  const popupDetails = document.getElementById('popup-details');
+  const closePopup = document.getElementById('close-popup');
+
+  products.forEach(product => {
+      product.addEventListener('click', function() {
+          const productId = this.dataset.id;
+          const productDetails = document.getElementById(`product-${productId}`);
+
+          if (productDetails) {
+              popupDetails.innerHTML = productDetails.innerHTML;
+              popup.classList.add('visible');
+          }
+      });
+  });
+
+  closePopup.addEventListener('click', function() {
+      popup.classList.remove('visible');
+      setTimeout(() => {
+          popupDetails.innerHTML = '';
+      }, 500); // Duration of the transition
+  });
+
+  window.addEventListener('click', function(event) {
+      if (event.target == popup) {
+          popup.classList.remove('visible');
+          setTimeout(() => {
+              popupDetails.innerHTML = '';
+          }, 500); // Duration of the transition
+      }
+  });
+});
+
+

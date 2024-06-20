@@ -1,4 +1,5 @@
 .wrapper{
+
     .container{
         max-width: 1400px;
         margin: 0 auto;
@@ -16,13 +17,24 @@
                     li{
                         font-size: 18px;
                         font-weight: 400;
+                        transition: all 0.4s ease;
+                        cursor: pointer;
+                        &:hover{
+                            transform: scale(1.050);
+                        }
                     }
                 }
             }
             .socials{
+                transition: all 0.5s ease;
                 a{
                     font-size: 18px;
                     font-weight: 400;
+                    
+                }
+                &:hover{
+                    transform: scale(1.2);
+                    font-weight: 800;
                 }
             }
         }
